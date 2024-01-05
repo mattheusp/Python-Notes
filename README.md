@@ -9,8 +9,7 @@
 ### How to create a venv?
 
 - In the root of your new project, run the following command in your terminal:
-
-"python -m venv .venv"
+```python -m venv .venv```
 
 
 ### How to use a venv?
@@ -22,7 +21,7 @@
 
 - To exit venv, simply execute the following command, or close the terminal.
 
-"deactivate"
+```deactivate```
 
 ___
 
@@ -31,20 +30,20 @@ ___
 
 - To install the requests module, run:
 
-"pip install requests"
+```pip install requests```
 
 
 ### Listing installed dependencies:
 
 - To view the dependencies and their installed versions:
 
-pip freeze
+```pip freeze```
 
 ### Saving dependencies in requirements.txt
 
 - Store all installed dependencies:
 
-"pip freeze > requirements.txt"
+```pip freeze > requirements.txt```
 
 
 ___
@@ -53,21 +52,23 @@ ___
 
 - Dictionaries in python is a type of structure that stores information in key and value pairs. Each key is unique for accessing and selecting the corresponding value.
 
-
-"person = {
+```
+person = {
      "name": "mMttheus",
      "age": 21,
      "contact": "https://www.linkedin.com/in/mattheuspereira/"
-}"
-
+}
+```
 
 ### Information grouping
 
 - Dictionaries are useful for organizing and retrieving data efficiently.
 
+```
 print(f"Name: { person['name'] }")
 print(f"Age: { person['age'] }")
 print(f"Contact: { person['contact'] }")
+```
 
 Note that with a single person variable, we can store different types of information, such as name, age and contact.
 
@@ -79,14 +80,17 @@ Note that with a single person variable, we can store different types of informa
 
 ### creating a list of dictionaries
 
+```
 people = [
      { "name": "Guilherme", "age": 27 },
      { "name": "Maria", "age": 32 },
      { "name": "John", "age": 18 },
 ]
+```
 
 ### displaying users in a loop in the list
 
+```
 for p in people:
      print(f"Name: { p['name'] }, Age: { p['age'] }")
 
@@ -94,6 +98,7 @@ for p in people:
 Name: Matheus, Age: 21
 Name: Jessica, Age: 28
 Name: Lucas, Age: 30
+```
 
 
 ### Adding new information to the dictionary
@@ -103,17 +108,21 @@ We can add new information to the dictionary as follows:
 
 ### creating a dictionary with initial information
 
+```
 player = {
      "name": "Guilherme",
      "level 1
 }
+```
 
 ### adding new keys and values to the dictionary
 
+```
 player['life'] = 100
 player['damage'] = 25.2
 player['clan'] = "Pythonistas"
 player['leader_clan'] = True
+```
 
 ### displaying the dictionary with the added information
 
@@ -121,6 +130,7 @@ print(player)
 
 ### Exit
 
+```
 {
      'name': 'Guilherme',
      'level 1,
@@ -129,3 +139,4 @@ print(player)
      'clan': 'Pythonistas',
      'leader_clan': True
 }
+```
