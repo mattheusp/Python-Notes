@@ -54,7 +54,7 @@ ___
 
 ```
 person = {
-     "name": "mMttheus",
+     "name": "Mattheus",
      "age": 21,
      "contact": "https://www.linkedin.com/in/mattheuspereira/"
 }
@@ -82,9 +82,9 @@ Note that with a single person variable, we can store different types of informa
 
 ```
 people = [
-     { "name": "Guilherme", "age": 27 },
-     { "name": "Maria", "age": 32 },
-     { "name": "John", "age": 18 },
+     { "name": "Mattheus", "age": 27 },
+     { "name": "Jessica", "age": 32 },
+     { "name": "Lucas", "age": 18 },
 ]
 ```
 
@@ -110,7 +110,7 @@ We can add new information to the dictionary as follows:
 
 ```
 player = {
-     "name": "Guilherme",
+     "name": "Mattheus",
      "level 1
 }
 ```
@@ -132,7 +132,7 @@ print(player)
 
 ```
 {
-     'name': 'Guilherme',
+     'name': 'MAttheus',
      'level 1,
      'life': 100,
      'damage': 25.2,
