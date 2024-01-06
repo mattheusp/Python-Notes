@@ -12,7 +12,7 @@
 ```python -m venv .venv```
 
 
-### How to use a venv?
+### How to use venv?
 
 - After entering venv, install the project dependencies (modules, libs in general)
 
@@ -54,9 +54,9 @@ ___
 
 ```
 person = {
-     "name": "Mattheus",
-     "age": 21,
-     "contact": "https://www.linkedin.com/in/mattheuspereira/"
+      "name": "Mattheus",
+      "age": 21,
+      "contact": "https://www.linkedin.com/in/mattheuspereira/"
 }
 ```
 
@@ -82,9 +82,9 @@ Note that with a single person variable, we can store different types of informa
 
 ```
 people = [
-     { "name": "Mattheus", "age": 27 },
-     { "name": "Jessica", "age": 32 },
-     { "name": "Lucas", "age": 18 },
+      { "name": "Mattheus", "age": 27 },
+      { "name": "Jessica", "age": 32 },
+      { "name": "Lucas", "age": 18 },
 ]
 ```
 
@@ -92,7 +92,7 @@ people = [
 
 ```
 for p in people:
-     print(f"Name: { p['name'] }, Age: { p['age'] }")
+      print(f"Name: { p['name'] }, Age: { p['age'] }")
 
 
 Name: Matheus, Age: 21
@@ -110,8 +110,8 @@ We can add new information to the dictionary as follows:
 
 ```
 player = {
-     "name": "Mattheus",
-     "level 1
+      "name": "Mattheus",
+      "level 1
 }
 ```
 
@@ -128,15 +128,68 @@ player['leader_clan'] = True
 
 print(player)
 
-### Exit
+###Exit
 
 ```
 {
-     'name': 'MAttheus',
-     'level 1,
-     'life': 100,
-     'damage': 25.2,
-     'clan': 'Pythonistas',
-     'leader_clan': True
+      'name': 'MAttheus',
+      'level 1,
+      'life': 100,
+      'damage': 25.2,
+      'clan': 'Pythonistas',
+      'leader_clan': True
 }
 ```
+
+___
+
+
+## Conditionals
+
+- Changes the execution flow of our programs
+
+
+### Structure of a conditional
+
+if (condition)
+      // do something
+
+or else (other condition)
+      // do something
+
+otherwise
+      // do something
+
+- The condition must be true for the instruction block to be executed.
+
+- We can use operators, variables, and even call functions with returns to validate a conditional.
+
+### Example using python
+
+```
+age = 18
+
+if age >= 18
+      print("adult")
+
+elif age >=16:
+      print("teen")
+
+elif age >=13:
+      print ("pre teenager")
+
+else:
+      print("child")
+```
+
+In the example above, I created a variable called age, which takes the value of 18.
+
+Then I created some conditions to display a message
+
+1. If the age is greater than or equal to 18: adult
+
+2. Or, if the age is greater than or equal to 16: teenager
+
+3. Or, if the age is greater than or equal to 13: pre-adolescent
+
+4. Otherwise: child
