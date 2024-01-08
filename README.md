@@ -54,9 +54,9 @@ ___
 
 ```
 person = {
-      "name": "Mattheus",
-      "age": 21,
-      "contact": "https://www.linkedin.com/in/mattheuspereira/"
+       "name": "Mattheus",
+       "age": 21,
+       "contact": "https://www.linkedin.com/in/mattheuspereira/"
 }
 ```
 
@@ -82,9 +82,9 @@ Note that with a single person variable, we can store different types of informa
 
 ```
 people = [
-      { "name": "Mattheus", "age": 27 },
-      { "name": "Jessica", "age": 32 },
-      { "name": "Lucas", "age": 18 },
+       { "name": "Mattheus", "age": 27 },
+       { "name": "Jessica", "age": 32 },
+       { "name": "Lucas", "age": 18 },
 ]
 ```
 
@@ -92,7 +92,7 @@ people = [
 
 ```
 for p in people:
-      print(f"Name: { p['name'] }, Age: { p['age'] }")
+       print(f"Name: { p['name'] }, Age: { p['age'] }")
 
 
 Name: Matheus, Age: 21
@@ -110,8 +110,8 @@ We can add new information to the dictionary as follows:
 
 ```
 player = {
-      "name": "Mattheus",
-      "level 1
+       "name": "Mattheus",
+       "level 1
 }
 ```
 
@@ -120,7 +120,7 @@ player = {
 ```
 player['life'] = 100
 player['damage'] = 25.2
-player['clan'] = "Pythonistas"
+player['clan'] = "Pythonists"
 player['leader_clan'] = True
 ```
 
@@ -132,19 +132,19 @@ print(player)
 
 ```
 {
-      'name': 'MAttheus',
-      'level 1,
-      'life': 100,
-      'damage': 25.2,
-      'clan': 'Pythonistas',
-      'leader_clan': True
+       'name': 'Mattheus',
+       'level 1,
+       'life': 100,
+       'damage': 25.2,
+       'clan': 'Pythonists',
+       'leader_clan': True
 }
 ```
 
 ___
 
 
-## Conditionals
+##Conditionals
 
 - Changes the execution flow of our programs
 
@@ -152,34 +152,34 @@ ___
 ### Structure of a conditional
 
 if (condition)
-      // do something
+       // do something
 
 or else (other condition)
-      // do something
+       // do something
 
 otherwise
-      // do something
+       // do something
 
 - The condition must be true for the instruction block to be executed.
 
 - We can use operators, variables, and even call functions with returns to validate a conditional.
 
-### Example using python
+### Examples using python
 
 ```
 age = 18
 
 if age >= 18
-      print("adult")
+       print("adult")
 
 elif age >=16:
-      print("teen")
+       print("teen")
 
 elif age >=13:
-      print ("pre teenager")
+       print ("pre teenager")
 
 else:
-      print("child")
+       print("child")
 ```
 
 In the example above, I created a variable called age, which takes the value of 18.
@@ -193,3 +193,74 @@ Then I created some conditions to display a message
 3. Or, if the age is greater than or equal to 13: pre-adolescent
 
 4. Otherwise: child
+
+___
+
+## Lists
+
+- These are ordered collections of items in Python
+
+- The indices in a list can be of different types and can be accessed through indexes.
+
+### Example using Python
+
+´´´
+fruits = ['apple', 'banana', 'orange']
+       print (fruits[0])
+´´´
+
+___
+
+## Repetitions (loops)
+
+- 'for' and 'while' are control structures used to execute a block of code multiple times.
+
+- 'for' is generally used when the number of iterations is known in advance.
+
+- 'while is when the stopping condition is not known in advance.
+
+### Example of 'for' in Python
+
+for number in range (5):
+       print(number)
+
+'while' example in python
+
+counter = 0
+while counter <5:
+print (counter)
+counter +=1
+
+___
+
+## Dictionaries
+
+- Dictionaries are data structures that store key-value pairs
+
+- Each value is associated with a unique key, allowing quick access to data.
+
+### Example used python
+
+´´´student={'name': 'João', 'age':20, 'course': 'Engineering'}
+print(student['age'])
+
+___
+
+
+## Functions and parameters
+
+- Functions are blocks of code that perform a specific task and can be reused in different parts of the program.
+
+- Parameters are values that can be passed to a function to customize its behavior.
+
+
+### Python example
+
+´´´
+def greeting(name):
+       print(f''Hello, {name}'')
+
+greeting('Maria')
+´´´
+
+___
